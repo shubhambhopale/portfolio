@@ -29,14 +29,20 @@ nav li {
 
 nav a,
 nav span {
-    display: inline-block;
-    font-size: 2rem;
-    height: 3rem;
-    line-height: 1.7;
+    display: inline;
+    font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+}
 
+.active {
+    color: rgb(0, 68, 255);
+}
+
+h1 {
+    color: rgba(0, 37, 139, 0.863);
+    text-align: center;
 }
 
 aside {
@@ -106,4 +112,11 @@ button {
     /* This extra margin represent roughly the same space as the space
 between the labels and their text fields */
     margin-left: .5em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

@@ -3,6 +3,8 @@
 
 <head>
     <title>Portfolio Site</title>
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +18,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="#">My Gallery</a></li>
+                <li><a href="#" class="active">My Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -24,14 +26,16 @@
     <main>
         <h2>Favourite photos</h2>
 
-        <a href="favorite-1.jpg"><img src="../pictures/favorite-1_th.jpg"
-                alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
-        <a href="favorite-2.jpg"><img src="../pictures/favorite-2_th.jpg"
-                alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
-        <a href="favorite-3.jpg"><img src="../pictures/favorite-3_th.jpg"
-                alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
-        <a href="favorite-4.jpg"><img src="../pictures/favorite-4_th.jpg"
-                alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
+        <div class="wrapper">
+            <div class="box a"><img src="../pictures/favorite-1_th.jpg"
+                alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></div>
+            <div class="box b"><img src="../pictures/favorite-2_th.jpg"
+                alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></div>
+            <div class="box c"><img src="../pictures/favorite-3_th.jpg"
+                alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></div>
+            <div class="box d"><img src="../pictures/favorite-4_th.jpg"
+                alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></div>
+        </div>
     </main>
 
     <footer>
