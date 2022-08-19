@@ -39,6 +39,10 @@
                     <label for="name">Your Email:</label>
                     <input type="email" id="email" name="user_email">
                 </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
                 <li class="button">
                     <button type="submit" onclick="message_sent_ack()">Click to send your message...</button>
                 </li>
@@ -58,9 +62,10 @@
 
             var name = document.forms["contact_form"]["user_name"].value;
             var email = document.forms["contact_form"]["user_email"].value;
+            var msg = document.forms["contact_form"]["user_message"].value;
 
-            if (name == null || name == "" || email == null || email == "") {
-                alert("Name/ Email is EMPTY..");
+            if (name == null || name == "" || email == null || email == "" || msg == null || msg == "") {
+                alert("Either Name/ Email/Message is EMPTY..");
                 return;
             }
 
